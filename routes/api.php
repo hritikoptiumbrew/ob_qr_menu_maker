@@ -19,6 +19,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+
+
+
 Route::post('manageAndroidWebhookEvents', [PaymentModuleController::class, 'manageAndroidWebhookEvents']);
 Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
 use App\Http\Controllers\ImageUploadController;
